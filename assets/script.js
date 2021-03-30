@@ -1,23 +1,35 @@
 var requestUrl = 'https://api.openweathermap.org';
-var fetchButton = document.getElementById('fetch-button');
+var fetchButton = document.getElementById('fetchButton');
 var cityName = $('input[name="cityName"]').val();
 let apiKey = "d466d46c54bd0adeec8e8694c4da4560"
+let cityLat = city.lat
+let cityLong = city.long
 
-// getApi(requestUrl);
+fetchButton.addEventListener('click', getApi);
+
 fetch("http://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&appid="+apiKey)
 
 .then(response => 
     response.json())
-
-.then(function(data){
-    console.log(data);
-})
-
-
-
-
-
-
+    
+    .then(function(data){
+        console.log(data);
+    })
+    
+    
+    fetch(https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude=minutely,hourly,daily&appid={API key})
+    
+    .then(response => 
+        response.json())
+        
+        .then(function(data){
+            console.log(data);
+        })
+        
+        
+        
+        
+        // getApi(requestUrl);
 //make form
 //get form city input 
 
@@ -41,7 +53,6 @@ fetch("http://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&appid="+apiKe
 
 
 
-// fetchButton.addEventListener('click', getApi);
 
 // fetch(requestUrl)
 //   .then(function (response) {
