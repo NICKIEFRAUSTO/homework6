@@ -28,36 +28,56 @@
   </head>
 
   <body>
+
     <header class="jumbotron">
       <h1 class="display-3">Weather Dashboard</h1>
-      <p class="lead"></p>
-      <p id="currentDay" class="lead"></p>
+      <p class=""></p>
+      <p id="" class=""></p>
     </header>
 
-    <div class="container" id="sidenav">
-      <!--side navigation  -->
-        <form>
-            <h2 Search for a City></h2>
-            <p> <input type="text" placeholder="City name"> 
-                <button id="fetchbutton" >Search</button>
-            </p>
-            <p> <button>  Austin        </button>   </p>
-            <p> <button>  Chicago       </button>   </p>
-            <p> <button>  NewYork       </button>   </p>
-            <p> <button>  Orlando       </button>   </p>
-            <p> <button>  SanFrancisco  </button>   </p>
-            <p> <button>  Seattle       </button>   </p>
-            <p> <button>  Denver        </button>   </p>
-            <p> <button>  Atlanta       </button>   </p>
-        </form>
-    </div>
+        <main class ="flex-row justify-space-between">
+            <div class="col-12 col-md-4">
+            <!--side navigation  -->
+                <div class="card">
+                    <h2 class="card-header text-uppercase">Search for a City</h2>
+                    <form id="user-form" class="card-body">
+                    
+                        <label class="form-label" for="city">City</label>
+                        <input city="city" id="city" type="text" placeholder="City name" 
+                            autofocus="true" class="form-input" />    
+                        <button id="fetchbutton">Search</button>
 
-    <div class="container" id="maindisplay">
-        <!-- the searched city weather information will display here --> 
+                        <!-- <ul> 
+                          
+                          <li><button data-location="austin" class="btn">Austin</button></li>
+                          
+                          <li><button data-location="chicago" class="btn">Chicago</button></li>
+                          
+                          <li><button data-location="newyork" class="btn">NewYork</button></li>
+                          
+                          <li><button data-location="orlando" class="btn">Orlando</button></li>
+                          
+                          <li><button data-location="sanfrancisco" class="btn">SanFrancisco</button></li>
+                          
+                          <li><button data-location="seattle" class="btn">Seattle</button></li>
+                          
+                          <li><button data-location="denver" class="btn">Denver</button></li>
+                          
+                          <li><button data-location="atlanta" class="btn">Atlanta</button></li>
 
+                        </ul> -->
+                    
+                    </form>
+                </div>
+            </div>
 
-    </div>
+            <div class="col-12 col-md-8">
+                <h2 class="subtitle"> <span id="weather search term"></span></h2>
+            <!-- the searched city weather information will display here --> 
 
+                <div id ="5-day forecast-container" class=""></div>
+            </div>
+        </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
