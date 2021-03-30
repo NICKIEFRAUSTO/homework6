@@ -5,29 +5,29 @@ let apiKey = "d466d46c54bd0adeec8e8694c4da4560"
 let cityLat = city.lat
 let cityLong = city.long
 
+// fetchButton.addEventListener('click', getApi)
 
-function getApi(){
+// function getApi(event){
+//     event.preventDefault();
     fetch("http://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&appid="+apiKey)
-    fetchButton.addEventListener('click', getApi)
-
-    .then(response => 
-    response.json())
-    
-        .then(function(data){
-        console.log(data);
-        })
-    
-    
-    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,daily&appid={API key}")
-    
     .then(response => 
         response.json())
+
+    .then(function(data){
+        console.log(data);
+    })
+// }
+    
+    // fetch("https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,daily&appid={API key}")
+    
+    // .then(response => 
+    //     response.json())
         
-        .then(function(data){
-            console.log(data);
-        })
+    //     .then(function(data){
+    //         console.log(data);
+    //     })
         
-    }      
+    // }      
         
         
 //make form
@@ -64,4 +64,7 @@ function getApi(){
 //       console.log(data[i].url);
       
 //     }
-//   });
+//   })
+
+
+
