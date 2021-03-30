@@ -7,6 +7,7 @@ let cityLong = city.long
 
 fetchButton.addEventListener('click', getApi);
 
+function getApi(){
 fetch("http://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&appid="+apiKey)
 
 .then(response => 
@@ -17,7 +18,7 @@ fetch("http://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&appid="+apiKe
     })
     
     
-    fetch(https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude=minutely,hourly,daily&appid={API key})
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,daily&appid={API key}")
     
     .then(response => 
         response.json())
@@ -26,10 +27,9 @@ fetch("http://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&appid="+apiKe
             console.log(data);
         })
         
+    }      
         
         
-        
-        // getApi(requestUrl);
 //make form
 //get form city input 
 
