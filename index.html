@@ -39,43 +39,61 @@
             <div class="col-12 col-md-4">
             <!--side navigation  -->
                 <div class="card">
-                    <h2>Search for a City</h2>
+                    <h4>Search for a City</h4>
 
                     <form id="searchForm">
                       <input name="cityName" id="city" type="text" placeholder="City name" 
                             autofocus="true" class="form-input" />
                                           
-                      <button id="fetchButton">Search</button>
-
-                        <!-- <ul> 
-                          
-                          <li><button data-location="austin" class="btn">Austin</button></li>
-                          
-                          <li><button data-location="chicago" class="btn">Chicago</button></li>
-                          
-                          <li><button data-location="newyork" class="btn">NewYork</button></li>
-                          
-                          <li><button data-location="orlando" class="btn">Orlando</button></li>
-                          
-                          <li><button data-location="sanfrancisco" class="btn">SanFrancisco</button></li>
-                          
-                          <li><button data-location="seattle" class="btn">Seattle</button></li>
-                          
-                          <li><button data-location="denver" class="btn">Denver</button></li>
-                          
-                          <li><button data-location="atlanta" class="btn">Atlanta</button></li>
-
-                        </ul> -->
-                    
+                      <button id="searchButton">Search</button>
+                      
                     </form>
-                </div>
+                  
+                  </div>
+
+                  <div class="recent">
+                  
+                   <ul id="recentSearch">
+                      
+                  </ul> 
+                </div>                    
             </div>
 
-            <div class="col-12 col-md-8">
-                <h2 class="subtitle"> <span id="weather search term"></span></h2>
-            <!-- the searched city weather information will display here --> 
+<section id="5-day forecast-container">
+  <h2>5-Day Forecast</h2>
+  
+  <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text"data-id="date">date</p>
+        <p class="card-text"data-id="icon">icon</p>
+        <p class="card-text"data-id="temp">temp</p>
+        <p class="card-text"data-id="humidity">humidity</p>
+      </div>
+  </div>
 
-                <div id ="5-day forecast-container" class=""></div>
+   <div id="day1">  
+      <ul>.
+      <li>id="date1"></li>
+      <li>id="icon1"></li>
+      <li>id="temp1"></li>
+      <li>id="humidity1"></li>
+      
+    </div> 
+
+    
+    <div id="day3">  
+
+    </div>
+    <div id="day4">  
+
+    </div>
+    <div id="day5">  
+
+    </div>
+
+</section>
+                
             </div>
         </main>
 
